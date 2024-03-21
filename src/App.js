@@ -1,12 +1,11 @@
+import MobileMain from "./pages/MobileMain";
 import { GlobalStyles } from "./styles/GlobalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      hello world
-      <button>버튼</button>
-      <a>link</a>
+      <MobileMain />
     </>
   );
 }

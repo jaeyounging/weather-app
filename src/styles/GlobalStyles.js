@@ -1,18 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-import PretendardRegular from "../assets/fonts/Pretendard-Regular.woff2";
-
 export const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: "PretendardRegular"; // 폰트 수정
-    src: local('PretendardRegular'), local('PretendardRegular');
-        font-style: normal;
-        src: url(${PretendardRegular}) format('truetype');
+    font-family: "Pretendard-Medium";
+    src:url("../assets/fonts/Pretendard-Medium.woff") format("font-woff")
   }
 
   ${reset}
-
   * {box-sizing: border-box;}
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -34,14 +29,16 @@ export const GlobalStyles = createGlobalStyle`
     font: inherit;
     vertical-align: baseline;
   }
-
   article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
   body {
-    font-family: "PretendardRegular"; // 폰트 수정하기
+    font-family: "Pretendard-Medium"; // 폰트 수정
     line-height: 1;
+    max-width: 400px;
+    margin: auto;
+    background-color: #f2f2f2;
   }
   ol, ul {
     list-style: none;
@@ -89,9 +86,6 @@ export const GlobalStyles = createGlobalStyle`
     vertical-align: top;
     width: 100%;
   }
-
-
-
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
